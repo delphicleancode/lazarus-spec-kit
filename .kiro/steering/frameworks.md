@@ -27,6 +27,14 @@ Este spec-kit oferece suporte a frameworks robustos e consolidados no ecossistem
 - **Skills:** `.gemini/skills/intraweb-framework/SKILL.md`
 - **Rules:** `.cursor/rules/intraweb-patterns.md`
 
+### Delphi -> Lazarus Migration
+
+- **Quando usar:** Port de projetos Delphi (especialmente IntraWeb) para Lazarus/FreePascal sem alterar regra de negocio.
+- **Triggers:** migrar Delphi para Lazarus, FireDAC -> Zeos, DFM -> LFM, ajuste de `System.*`/`VCL.*`, comando `RETOMAR`.
+- **Skill completa:** `.gemini/skills/delphi-lazarus-migration/SKILL.md`
+- **Skill curta (checklist):** `.gemini/skills/delphi-lazarus-migration-quick/SKILL.md`
+- **Rule Cursor:** `.cursor/rules/delphi-lazarus-migration-patterns.md`
+
 ### Firebird Database
 
 - **Quando usar:** Banco principal do ecossistema FreePascal/Lazarus, com PSQL e transações ACID.

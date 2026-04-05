@@ -8,6 +8,26 @@ alwaysApply: false
 
 Consulte `AGENTS.md` na raiz do projeto para a referência completa.
 
+## Ativacao de Skill de Migracao
+
+Quando o pedido mencionar migracao Delphi -> Lazarus, conversao IntraWeb, FireDAC -> Zeos,
+DFM -> LFM, ajuste de `System.*`/`VCL.*`, ou comando `RETOMAR` de migracao:
+
+- Ativar skill completa: `.gemini/skills/delphi-lazarus-migration/SKILL.md`
+- Se o usuario pedir versao enxuta/checklist rapido: `.gemini/skills/delphi-lazarus-migration-quick/SKILL.md`
+- Respeitar regra de equivalencia funcional (sem refatorar regra de negocio)
+
+### Prioridade Automatica da Versao Quick
+
+Se o prompt contiver termos como `curto`, `resumo`, `rapido`, `checklist`,
+`versao curta` ou `objetivo`, priorizar:
+
+- `.gemini/skills/delphi-lazarus-migration-quick/SKILL.md`
+
+Se o usuario pedir detalhamento completo, voltar para:
+
+- `.gemini/skills/delphi-lazarus-migration/SKILL.md`
+
 ## Resumo de Convenções
 
 - **PascalCase** para identificadores, palavras reservadas em minúsculas
@@ -74,3 +94,5 @@ Consulte skills específicas para cada framework:
 - **TDD (FPCUnit):** `.gemini/skills/tdd-fpcunit/SKILL.md` — Test-Driven Development, Fakes, FPCUnit
 - **Clean Code:** `.gemini/skills/clean-code/SKILL.md` — Padrões pragmáticos de código limpo
 - **Code Review:** `.gemini/skills/code-review/SKILL.md` — Checklist de revisão de código
+- **Delphi -> Lazarus Migration:** `.gemini/skills/delphi-lazarus-migration/SKILL.md` — Migração com equivalência funcional e checkpoint
+- **Delphi -> Lazarus Migration (Quick):** `.gemini/skills/delphi-lazarus-migration-quick/SKILL.md` — Versão curta baseada em checklist
